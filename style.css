@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&family=Roboto:wght@300;400&display=swap');
+
+:root {
+	font-size: 62.5%;
+	--heading-family: normal 800 3.8rem/4.2rem 'Nunito', sans-serif;
+	--text-family: 'Roboto', sans-serif;
+
+	--purple: #5e0957;
+	--yellow: #d29a25;
+}
+
+*,
+button {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: none;
+	border: none;
+}
+
+body {
+	width: 100%;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-weight: 400;
+	font-family: 'system-ui', sans-serif;
+	overflow-x: hidden;
+}
+
+p {
+	color: #383838;
+}
+
+button {
+	width: 240px;
+	height: 56px;
+	padding: 1.2rem 3.5rem;
+	background: rgb(211, 169, 26);
+	background: linear-gradient(
+		90deg,
+		rgba(211, 169, 26, 1) 12%,
+		rgba(235, 204, 81, 1) 31%,
+		rgba(235, 232, 176, 1) 56%,
+		rgba(174, 116, 33, 1) 78%,
+		rgba(218, 202, 116, 1) 97%
+	);
+	color: var(--purple);
+
+	border-radius: 12px;
+	font: normal 800 1.6rem/1.5rem 'Nunito', sans-serif;
+
+	cursor: pointer;
+}
+
+header {
+	width: 100%;
+	background-image: url(./src/images/moca-magra.jpg);
+	background-size: cover;
+}
+
+.bg-overlay {
+	background-color: #5e0957e2;
+
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.logo {
+	text-align: center;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 70%;
+}
+
+.header-wrapper .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.header-wrapper .content h2 {
+	font: var(--heading-family);
+	color: white;
+}
+
+.header-wrapper .header-image img {
+	text-align: center;
+	width: min(calc(20rem + 30vw), 48rem);
+}
+
+section.details {
+	padding: 9rem 0;
+}
+
+.details h2 {
+	text-align: center;
+	font: var(--heading-family);
+	color: var(--yellow);
+}
+
+.details-wrapper {
+	max-width: 114rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+.feature-text {
+	color: var(--yellow);
+	font: normal 800 1.8rem 'Nunito', sans-serif;
+}
+
+.details-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+section.benefits {
+	padding: 9rem 0;
+	background-color: var(--purple);
+}
+
+.benefits h2 {
+	font: var(--heading-family);
+	color: var(--yellow);
+	text-align: center;
+}
+
+.benefits-content {
+	text-align: center;
+
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 6rem 0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.icon-wrapper svg {
+	width: 10rem;
+	margin-bottom: 1rem;
+}
+
+.icon-wrapper h3 {
+	font: normal 800 2rem/2.4rem 'Nunito', sans-serif;
+	color: var(--yellow);
+}
+
+.icon-wrapper p {
+	font: normal 400 1.6rem/2.4rem 'system-ui', sans-serif;
+	color: white;
+
+	margin-top: 1rem;
+}
