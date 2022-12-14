@@ -18,6 +18,15 @@ button {
 	border: none;
 }
 
+a {
+	text-decoration: none;
+	color: none;
+}
+
+/* * {
+	outline: 1px solid limegreen !important;
+} */
+
 body {
 	width: 100%;
 	font-size: 1.6rem;
@@ -50,6 +59,10 @@ button {
 	font: normal 800 1.6rem/1.5rem 'Nunito', sans-serif;
 
 	cursor: pointer;
+}
+
+section {
+	padding: 9rem 0;
 }
 
 header {
@@ -93,9 +106,7 @@ header {
 	width: min(calc(20rem + 30vw), 48rem);
 }
 
-section.details {
-	padding: 9rem 0;
-}
+/* End Header Section */
 
 .details h2 {
 	text-align: center;
@@ -124,8 +135,9 @@ section.details {
 	gap: 2rem;
 }
 
+/* End Details Section */
+
 section.benefits {
-	padding: 9rem 0;
 	background-color: var(--purple);
 }
 
@@ -152,6 +164,10 @@ section.benefits {
 	margin-bottom: 1rem;
 }
 
+.icon-wrapper svg path {
+	fill: var(--yellow);
+}
+
 .icon-wrapper h3 {
 	font: normal 800 2rem/2.4rem 'Nunito', sans-serif;
 	color: var(--yellow);
@@ -162,4 +178,26 @@ section.benefits {
 	color: white;
 
 	margin-top: 1rem;
+}
+
+/* End Benefits Section */
+
+.topics {
+	text-align: center;
+}
+
+.topics h2 {
+	text-align: center;
+	color: var(--yellow);
+	font: normal 800 3.2rem/3.8rem 'Nunito', sans-serif;
+
+	margin-bottom: 6rem;
+}
+
+.topics img {
+	width: 70%;
+}
+.topics button {
+	margin: 2rem auto;
+	display: block;
 }
