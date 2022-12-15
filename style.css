@@ -40,6 +40,10 @@ p {
 	color: #383838;
 }
 
+h2 {
+	font-family: 'Nunito', sans-serif;
+}
+
 button {
 	width: 240px;
 	height: 56px;
@@ -185,6 +189,10 @@ section.benefits {
 
 /* End Benefits Section */
 
+section.topics {
+	padding-top: 0;
+}
+
 .topics {
 	text-align: center;
 }
@@ -300,11 +308,91 @@ section.offer {
 .offer .title {
 	text-align: center;
 	color: var(--yellow);
+	font-size: 2.4rem;
 }
 
 .offer .title p {
+	font-size: 2rem;
 	color: white;
 	margin: 1.6rem;
+}
+
+.offer-wrapper {
+	width: 70%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.offer .box {
+	width: 30%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.6rem;
+
+	text-align: center;
+
+	border: solid 2px var(--yellow);
+	border-top: none;
+
+	border-radius: 8px;
+	padding: 0 0 3rem;
+
+	background-color: aliceblue;
+}
+
+.title-box {
+	width: 101%;
+	background-color: var(--yellow);
+
+	border-radius: 8px 8px 0 0;
+}
+
+.box h3 {
+	width: 100%;
+
+	padding: 1rem 0;
+	color: white;
+}
+
+.box img {
+	width: 100%;
+}
+
+.box p + h3 {
+	background-color: var(--yellow);
+	width: 50%;
+	border-radius: 99999px;
+	padding: 1rem 0;
+
+	color: white;
+}
+
+.box p strong {
+	font-size: 2.2rem;
+	color: #666;
+}
+
+.box .divide {
+	width: 50%;
+	height: 15px;
+	border-bottom: 1px solid #666;
+	text-align: center;
+}
+
+.box h2 {
+	font-size: 2.7rem;
+	font-weight: 800;
+	color: var(--purple);
+}
+
+.box h2 span {
+	font-weight: 800;
+	font-size: 4.5rem;
 }
 
 /*  
