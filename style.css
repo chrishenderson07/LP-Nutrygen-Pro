@@ -97,7 +97,9 @@ header {
 }
 
 .header-wrapper .content h2 {
-	font: var(--heading-family);
+	font-size: clamp(1rem, 0.5rem + 5vw, 3.8rem);
+	font-family: 'Nunito', sans-serif;
+	line-height: clamp(1.6rem, 0.1rem + 10vw, 4.2rem);
 	color: white;
 }
 
@@ -139,6 +141,7 @@ header {
 
 section.benefits {
 	background-color: var(--purple);
+	padding-bottom: 0;
 }
 
 .benefits h2 {
@@ -200,4 +203,72 @@ section.benefits {
 .topics button {
 	margin: 2rem auto;
 	display: block;
+}
+
+/* End Topics Section */
+
+.ingredients {
+	background-color: var(--purple);
+	background-image: url('https://www.transparenttextures.com/patterns/buried.png');
+	text-align: center;
+}
+
+.ingredients h2 {
+	font: var(--heading-family);
+	text-align: center;
+	color: var(--yellow);
+}
+
+.ingredients-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 4rem;
+
+	width: 70%;
+	margin: 8rem auto;
+}
+.single-ingredient {
+	display: block;
+	text-align: center;
+}
+
+.single-ingredient h3 {
+	font-size: 2.2rem;
+	color: var(--yellow);
+
+	margin: 1rem 0;
+}
+
+.single-ingredient img {
+	width: 20rem;
+	border-radius: 50%;
+	border: solid 4px var(--yellow);
+}
+
+.single-ingredient p {
+	padding: 0 3rem;
+
+	color: white;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+/* Responsivity */
+
+@media (max-width: 720px) {
+	.bg-overlay .logo img {
+		width: 85%;
+	}
+	.header-wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.header-wrapper h2 {
+		font-size: clamp(1rem, 0.5rem - 5vw, 3.8rem);
+		text-align: center;
+	}
 }
