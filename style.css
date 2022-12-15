@@ -253,6 +253,75 @@ section.benefits {
 	line-height: 2.4rem;
 }
 
+/* End Ingredients Section */
+
+section.warranty {
+	padding-bottom: 0;
+}
+
+.warranty-wrapper {
+	width: 70%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	margin: 0 auto;
+}
+
+.warranty-image {
+	display: flex;
+}
+
+.warranty-image img {
+	width: 50rem;
+}
+
+.warranty-content {
+	display: grid;
+	place-content: center;
+	gap: 3rem;
+}
+
+.warranty-content h2 {
+	font: var(--heading-family);
+	color: var(--purple);
+}
+
+.warranty-content p {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+
+/* End Warranty Section */
+
+section.offer {
+	background-color: var(--purple);
+}
+
+.offer .title {
+	text-align: center;
+	color: var(--yellow);
+}
+
+.offer .title p {
+	color: white;
+	margin: 1.6rem;
+}
+
+/*  
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
 /* Responsivity */
 
 @media (max-width: 720px) {
