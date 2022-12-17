@@ -492,7 +492,7 @@ section.security {
 	height: 0;
 	overflow: hidden;
 
-	transition: 0.5s;
+	transition: all 0.2s;
 	overflow-y: hidden;
 }
 
@@ -749,11 +749,9 @@ footer .content-wrapper {
 	}
 
 	.contentBx .content {
-		position: relative;
-		font-size: 1.6rem;
-		opacity: 0;
 		height: 0;
 		overflow: auto;
+		overflow-y: hidden;
 	}
 
 	.contentBx.active .content {
