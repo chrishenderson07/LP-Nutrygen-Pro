@@ -517,6 +517,61 @@ section.security {
 	right: 22px;
 }
 
+/* End Faq Section */
+
+svg + footer {
+	margin-top: -1rem;
+}
+
+footer {
+	padding: 4rem 0;
+	background-color: var(--purple);
+}
+
+footer .content-wrapper {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	margin: 0 auto;
+}
+
+.content-wrapper p,
+.content-wrapper li {
+	color: white;
+	list-style: none;
+}
+
+.content-wrapper h2,
+.content-wrapper h3 {
+	color: var(--yellow);
+	font-size: 1.8rem;
+	font-weight: 800;
+
+	font-family: 'Nunito', sans-serif;
+
+	margin-bottom: 1rem;
+}
+
+.col2 li {
+	margin-bottom: 0.5rem;
+
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.col2 li:hover {
+	color: var(--yellow);
+}
+
+.content-wrapper .col4 {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-wrapper .col4 p + h3 {
+	margin-top: 1rem;
+}
 /*  
 *
 *
