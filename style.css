@@ -758,4 +758,14 @@ footer .content-wrapper {
 		height: 100%;
 		opacity: 1;
 	}
+
+	footer .content-wrapper {
+		text-align: center;
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.content-wrapper .col4 img {
+		margin: 0 auto;
+	}
 }
