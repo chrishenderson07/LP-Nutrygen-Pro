@@ -572,6 +572,37 @@ footer .content-wrapper {
 .content-wrapper .col4 p + h3 {
 	margin-top: 1rem;
 }
+
+/* End Footer */
+
+/* Other Pages */
+
+.topbar {
+	padding: 3rem 0;
+	background-color: var(--purple);
+	text-align: center;
+}
+
+.page-content {
+	width: 65%;
+	padding: 8rem 0;
+	margin: 0 auto;
+}
+
+.page-content h2 {
+	color: var(--yellow);
+	font-size: 3.8rem;
+	margin-bottom: 4rem;
+}
+
+.page-content h3 {
+	color: var(--purple);
+	font-size: 1.8rem;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	margin: 2rem 0;
+}
+
 /*  
 *
 *
