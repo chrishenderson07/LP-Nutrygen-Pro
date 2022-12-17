@@ -451,16 +451,28 @@ section.security {
 	border-radius: 12px 12px 0 0;
 }
 
+.contentBx:last-child .title {
+	border-radius: 0 0 12px 12px;
+}
+
 .contentBx .title {
 	position: relative;
 
-	background: var(--purple);
-	padding: 1.4rem;
+	padding: 1.8rem;
+	box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.3);
 
+	background-color: #efefef;
+	color: var(--purple);
 	font-size: 1.8rem;
 	font-weight: 500;
 
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.contentBx:hover .title {
+	color: var(--yellow);
+	background-color: var(--purple);
 }
 
 .contentBx .title::before {
@@ -473,9 +485,36 @@ section.security {
 	font-size: 2.4rem;
 }
 
-.contentBx .content p {
+.contentBx .content {
+	position: relative;
 	font-size: 1.6rem;
-	padding: 1rem;
+	height: 0;
+	overflow: hidden;
+
+	transition: 0.5s;
+	overflow-y: hidden;
+}
+
+.content p {
+	padding: 1.4rem;
+	line-height: 2.4rem;
+	font-size: 1.8rem;
+}
+
+.contentBx.active .content {
+	height: 110px;
+}
+
+.contentBx.active .title {
+	background-color: var(--purple);
+	color: var(--yellow);
+}
+
+.contentBx.active .title::before {
+	content: '-';
+	font-size: 2.9rem;
+	top: 45%;
+	right: 22px;
 }
 
 /*  
