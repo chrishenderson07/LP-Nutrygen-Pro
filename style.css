@@ -52,14 +52,13 @@ h2 {
 button {
 	width: 240px;
 	height: 56px;
-	padding: 1.2rem 3.5rem;
+	padding: 1.2rem 1rem;
 	background: rgb(211, 169, 26);
 	background: linear-gradient(
 		90deg,
-		rgba(211, 169, 26, 1) 12%,
-		rgba(235, 204, 81, 1) 31%,
-		rgba(235, 232, 176, 1) 56%,
-		rgba(174, 116, 33, 1) 78%,
+		#d3a91a 12%,
+		#ebcc51 31%,
+		#ae7421 78%,
 		rgba(218, 202, 116, 1) 97%
 	);
 	color: var(--purple);
@@ -72,6 +71,9 @@ button {
 	transition: all 0.3s;
 
 	animation: fadeUp 1s ease 0.5s backwards;
+
+	text-transform: uppercase;
+	line-height: 1.8rem;
 }
 
 button:hover {
@@ -140,6 +142,10 @@ header {
 
 /* End Header Section */
 
+.details {
+	padding: 2rem 0;
+}
+
 .details h2 {
 	text-align: center;
 	font: var(--heading-family);
@@ -185,7 +191,7 @@ section.benefits {
 
 	max-width: 60rem;
 	margin: 0 auto;
-	padding: 6rem 0;
+	padding: 3rem 0 0 0;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -229,6 +235,7 @@ section.benefits {
 
 section.topics {
 	padding-top: 0;
+	margin-top: -9rem;
 }
 
 .topics {
@@ -244,7 +251,7 @@ section.topics {
 }
 
 .topics img {
-	width: 70%;
+	width: 85%;
 }
 .topics button {
 	margin: 2rem auto;
@@ -316,7 +323,7 @@ section.warranty {
 }
 
 .warranty-wrapper {
-	width: 70%;
+	width: 75%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
@@ -351,6 +358,7 @@ section.warranty {
 
 section.offer {
 	background-color: var(--purple);
+	padding: 5rem 0;
 }
 
 .offer .title {
@@ -359,15 +367,9 @@ section.offer {
 	font-size: 2.4rem;
 }
 
-.offer .title p {
-	font-size: 2rem;
-	color: white;
-	margin: 1.6rem;
-}
-
 .offer-wrapper {
 	width: 70%;
-	margin: 0 auto;
+	margin: 3rem auto;
 
 	display: flex;
 	justify-content: center;
@@ -380,6 +382,7 @@ section.offer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 1.6rem;
 
 	text-align: center;
@@ -387,12 +390,14 @@ section.offer {
 	border: solid 2px var(--yellow);
 	border-top: none;
 
-	border-radius: 8px;
-	padding: 0 0 3rem;
+	border-radius: 32px;
+	padding: 9rem 0 2rem;
 
 	background-color: aliceblue;
 
 	transition: all 0.3s;
+
+	position: relative;
 }
 
 .offer .box:hover {
@@ -402,41 +407,86 @@ section.offer {
 
 .title-box {
 	width: 101%;
+	padding: 2rem 0;
 	background-color: var(--yellow);
 
-	border-radius: 8px 8px 0 0;
+	border-radius: 32px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-.box h3 {
+/* .box h3 {
 	width: 100%;
 
 	padding: 1rem 0;
 	color: white;
+} */
+.box p.qtd {
+	color: #333;
+	font-weight: 500;
+}
+
+.box .image-box {
+	position: relative;
+}
+
+.image-box .feature {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 100px;
+	height: 100px;
+	background-color: var(--yellow);
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+.feature {
+	font-size: 2rem;
+	line-height: 2rem;
+	font-weight: 400;
+
+	font-family: 'Nunito', sans-serif;
+}
+
+.feature b {
+	font-weight: 800;
+}
+
+.box .image-box h2 {
+	font-weight: 900;
+	font-size: 3.2rem;
 }
 
 .box img {
+	margin-top: 1.6rem;
 	width: 100%;
 }
 
-.box p + h3 {
+/* .box p + h3 {
 	background-color: var(--yellow);
 	width: 50%;
 	border-radius: 99999px;
 	padding: 1rem 0;
 
 	color: white;
+} */
+
+.box p.vista {
+	font-size: 2rem;
 }
 
 .box p strong {
 	font-size: 2.2rem;
-	color: #666;
-}
-
-.box .divide {
-	width: 50%;
-	height: 15px;
-	border-bottom: 1px solid #666;
-	text-align: center;
+	font-weight: 800;
+	color: #333;
 }
 
 .box h2 {
@@ -448,6 +498,11 @@ section.offer {
 .box h2 span {
 	font-weight: 800;
 	font-size: 4.5rem;
+}
+
+.box button.buy-box {
+	background: #458106;
+	color: white;
 }
 
 /* End Offer section  */
