@@ -540,6 +540,10 @@ section.security {
 
 /* End Security section */
 
+section.faq {
+	padding-bottom: 0;
+}
+
 .faq h2 {
 	margin-bottom: 3.2rem;
 }
@@ -926,6 +930,10 @@ footer .content-wrapper {
 	.contentBx.active .content {
 		height: 100%;
 		opacity: 1;
+	}
+
+	section.topics {
+		padding-top: 6rem;
 	}
 
 	footer .content-wrapper {
