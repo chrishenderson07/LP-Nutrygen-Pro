@@ -429,14 +429,11 @@ section.offer {
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	font-size: 1.8rem;
+	letter-spacing: 2px;
 }
 
-/* .box h3 {
-	width: 100%;
-
-	padding: 1rem 0;
-	color: white;
-} */
 .box p.qtd {
 	color: #333;
 	font-weight: 500;
@@ -484,14 +481,22 @@ section.offer {
 	width: 100%;
 }
 
-/* .box p + h3 {
-	background-color: var(--yellow);
-	width: 50%;
-	border-radius: 99999px;
-	padding: 1rem 0;
+.offer .free-shipping {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 0.6rem;
+	align-items: center;
+}
 
-	color: white;
-} */
+.free-shipping svg {
+	width: 40px;
+}
+
+.free-shipping-empty {
+	content: '';
+	height: 40px;
+}
 
 .box p.vista {
 	font-size: 2rem;
