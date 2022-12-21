@@ -336,6 +336,14 @@ section.warranty {
 	padding-bottom: 0;
 }
 
+.warranty h2 {
+	text-align: center;
+	font-size: 4.2rem;
+	font-weight: 800;
+	color: var(--purple);
+	line-height: 4.4rem;
+}
+
 .warranty-wrapper {
 	width: 75%;
 	display: grid;
@@ -355,12 +363,23 @@ section.warranty {
 .warranty-content {
 	display: grid;
 	place-content: center;
-	gap: 3rem;
+	gap: 2rem;
 }
 
-.warranty-content h2 {
-	font: var(--heading-family);
-	color: var(--purple);
+.warranty-content ul li {
+	list-style: none;
+	margin: 2rem 0;
+
+	font-size: 2.4rem;
+	font-weight: 700;
+
+	font: normal 800 2.4rem/3rem 'Nunito', sans-serif;
+}
+
+.warranty-content li::before {
+	content: '\2713\0020';
+	color: var(--yellow);
+	font-size: 3.2rem;
 }
 
 .warranty-content p {
@@ -922,11 +941,17 @@ footer .content-wrapper {
 		grid-template-columns: 1fr;
 		text-align: center;
 
-		padding: 0 0 9rem 0;
+		padding: 0 1rem 9rem 1rem;
+		width: 100%;
 	}
 
-	.warranty-image {
-		display: none;
+	.warranty-content {
+		width: 100%;
+	}
+
+	.warranty-image img {
+		width: 90%;
+		text-align: center;
 	}
 
 	.offer-wrapper {
