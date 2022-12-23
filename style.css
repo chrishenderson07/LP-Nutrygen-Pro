@@ -21,6 +21,8 @@ button {
 	box-sizing: border-box;
 	background-color: none;
 	border: none;
+
+	scroll-behavior: smooth;
 }
 
 a {
@@ -39,6 +41,8 @@ body {
 	font-weight: 400;
 	font-family: 'system-ui', sans-serif;
 	overflow-x: hidden;
+
+	scroll-behavior: smooth;
 }
 
 p {
@@ -333,7 +337,7 @@ section.topics {
 /* End Ingredients Section */
 
 section.warranty {
-	padding-bottom: 0;
+	padding-bottom: 4rem;
 }
 
 .warranty h2 {
@@ -342,6 +346,8 @@ section.warranty {
 	font-weight: 800;
 	color: var(--purple);
 	line-height: 4.4rem;
+
+	margin-bottom: 2rem;
 }
 
 .warranty-wrapper {
@@ -370,7 +376,7 @@ section.warranty {
 	list-style: none;
 	margin: 2rem 0;
 
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: 700;
 
 	font: normal 800 2.4rem/3rem 'Nunito', sans-serif;
